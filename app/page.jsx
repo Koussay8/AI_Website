@@ -243,6 +243,7 @@ export default function HomePage() {
             variants={staggerContainer}
             style={{
               position: 'relative',
+              marginTop: '-52px',
               zIndex: 4,
               display: 'flex',
               flexDirection: 'column',
