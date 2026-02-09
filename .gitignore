@@ -1,0 +1,89 @@
+# === Dépendances ===
+node_modules/
+package-lock.json
+
+# === Next.js build ===
+.next/
+out/
+
+# === Fichiers inutilisés du projet ===
+
+# Site Framer original scrapé (référence uniquement)
+landio.framer.website/
+
+# Fichier HTML statique (Next.js génère son propre HTML)
+index.html
+
+# Documentation interne (pas du code de prod)
+FRAMER_FIXES.md
+
+# Logos dupliqués à la racine (les vrais sont dans public/)
+/logo-black.png
+/logo-white.png
+
+# Logo noir inutilisé dans public/
+public/logo-black.png
+
+# Screenshots de comparaison visuelle
+screenshots/
+
+# === Testing (Playwright) ===
+tests/
+playwright.config.js
+playwright-report/
+test-results/
+.playwright-mcp/
+
+# === Composants Framer inutilisés ===
+framer/counter.jsx
+framer/get-template-can-delete-this.jsx
+framer/icon-card-2.jsx
+framer/load-more.jsx
+framer/monthly-yearly.jsx
+framer/pricing-card.jsx
+framer/secondary-button.jsx
+framer/service-1.jsx
+framer/service-2.jsx
+framer/stat-card.jsx
+framer/submit.jsx
+framer/team-card.jsx
+framer/testimonial-card.jsx
+framer/updates-card.jsx
+framer/nav/nav-link.jsx
+framer/buttons/menu-button.jsx
+framer/elements/faq-item.jsx
+framer/elements/menu-icon.jsx
+framer/elements/read-more.jsx
+framer/elements/version.jsx
+framer/cards/faq.jsx
+framer/component/step.jsx
+
+# === Composant custom inutilisé ===
+components/PricingSection.jsx
+
+# === Config agents VS Code ===
+.agent/
+.agents/
+
+# === IDE / OS ===
+.vscode/
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# === Env ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Vercel ===
+.vercel

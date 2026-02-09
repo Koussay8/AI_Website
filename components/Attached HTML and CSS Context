@@ -1,0 +1,399 @@
+Attached HTML and CSS Context
+
+<video autoplay="" loop="" muted="" playsinline="" preload="auto" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%"><source src="https://framerusercontent.com/assets/1g8IkhtJmlWcC4zEYWKUmeGWzI.mp4" type="video/mp4"></video>
+
+
+/* Inline style */
+element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Matched Rule from user-agent */
+video {
+  object-fit: contain;
+}
+
+/* Matched Rule from user-agent */
+video, canvas, img {
+  overflow-x: clip;
+  overflow-y: clip;
+  overflow-clip-margin: content-box;
+}
+
+/* Matched Rule from regular */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Matched Rule from regular */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+article, aside, footer, header, hgroup, main, nav, search, section {
+  display: block;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+article, aside, footer, header, hgroup, main, nav, search, section {
+  display: block;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 4 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 4 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 5 (user-agent) */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: var(--font-inter);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  --framer-will-change-override: none;
+  --framer-will-change-effect-override: none;
+  --framer-will-change-filter-override: none;
+  --framer-will-change-override: none;
+  --framer-will-change-effect-override: none;
+  --framer-will-change-filter-override: none;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  --framer-aspect-ratio-supported: auto;
+  --framer-aspect-ratio-supported: auto;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  --framer-will-change-override: none;
+  --framer-will-change-override: none;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  --framer-will-change-filter-override: none;
+  --framer-will-change-filter-override: none;
+}
+
+/* Inherited from ancestor level 6 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 6 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+html {
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --color-bg: #04070d;
+  --color-text: #d5dbe6;
+  --color-text-70: #d5dbe6b3;
+  --color-white: #fff;
+  --color-border: #d8e7f212;
+  --color-ui-1: #10131c;
+  --color-ui-2: #08090abf;
+  --color-light-blue: #b8c7d980;
+  --color-blue: #a6daff;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-instrument: "Instrument Serif", Georgia, serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --max-width: 1200px;
+  --section-padding: 100px 40px;
+  --container-padding: 40px;
+  --color-bg: #04070d;
+  --color-text: #d5dbe6;
+  --color-text-70: #d5dbe6b3;
+  --color-white: #fff;
+  --color-border: #d8e7f212;
+  --color-ui-1: #10131c;
+  --color-ui-2: #08090abf;
+  --color-light-blue: #b8c7d980;
+  --color-blue: #a6daff;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-instrument: "Instrument Serif", Georgia, serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --max-width: 1200px;
+  --section-padding: 100px 40px;
+  --container-padding: 40px;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --one-if-corner-shape-supported: 1;
+  --one-if-corner-shape-supported: 1;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root, .dark {
+  --unframer-ui-2: #08090abf;
+  --unframer-blue: #a6daff;
+  --unframer-border: #d8e7f212;
+  --unframer-light-blue: #b8c7d980;
+  --unframer-text-70: #d5dbe6b3;
+  --unframer-white-100: #fff;
+  --unframer-bg: #04070d;
+  --unframer-text: #d5dbe6;
+  --unframer-ui-1: #10131c;
+  --token-4e6adbd8-4eb9-420a-b4f6-0d1bb0e81bd6: #08090abf;
+  --token-55f2535a-f505-405f-bc21-e6a068be519c: #a6daff;
+  --token-5970a3c6-0f13-482e-8fb6-b8cb7d627b04: #d8e7f212;
+  --token-5e357ad1-f56a-4886-be0b-ea13c633f85c: #b8c7d980;
+  --token-98e77689-c0ed-4bec-a0a3-e86d11b001fb: #d5dbe6b3;
+  --token-a85af9cb-7834-4006-a277-2dd1295ae376: #fff;
+  --token-eb09dbbf-ef85-4b7f-81a5-44e9b062efb7: #04070d;
+  --token-f195ea74-7512-4096-8d91-0e7c7e10d0ab: #d5dbe6;
+  --token-f213e283-24d0-40a3-a2dc-bca1da07b971: #10131c;
+  --unframer-ui-2: #08090abf;
+  --unframer-blue: #a6daff;
+  --unframer-border: #d8e7f212;
+  --unframer-light-blue: #b8c7d980;
+  --unframer-text-70: #d5dbe6b3;
+  --unframer-white-100: #fff;
+  --unframer-bg: #04070d;
+  --unframer-text: #d5dbe6;
+  --unframer-ui-1: #10131c;
+  --token-4e6adbd8-4eb9-420a-b4f6-0d1bb0e81bd6: #08090abf;
+  --token-55f2535a-f505-405f-bc21-e6a068be519c: #a6daff;
+  --token-5970a3c6-0f13-482e-8fb6-b8cb7d627b04: #d8e7f212;
+  --token-5e357ad1-f56a-4886-be0b-ea13c633f85c: #b8c7d980;
+  --token-98e77689-c0ed-4bec-a0a3-e86d11b001fb: #d5dbe6b3;
+  --token-a85af9cb-7834-4006-a277-2dd1295ae376: #fff;
+  --token-eb09dbbf-ef85-4b7f-81a5-44e9b062efb7: #04070d;
+  --token-f195ea74-7512-4096-8d91-0e7c7e10d0ab: #d5dbe6;
+  --token-f213e283-24d0-40a3-a2dc-bca1da07b971: #10131c;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --one-if-corner-shape-supported: 1;
+  --one-if-corner-shape-supported: 1;
+}
