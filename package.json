@@ -25,7 +25,8 @@
     "react-dom": "^19.2.4",
     "react-fast-marquee": "^1.6.5",
     "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.9.1"
+    "tsparticles": "^3.9.1",
+    "unframer": "^4.0.5"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.1"
