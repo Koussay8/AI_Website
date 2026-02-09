@@ -362,7 +362,7 @@ export default function HomePage() {
 
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', justifyContent: 'center' }}>
               <img
-                src="https://framerusercontent.com/images/W7xYkGKzPzvnPv58ZBNzxS3JZI.jpg"
+                src="/founder-koussay.png"
                 alt="Founder"
                 style={{ width: '28px', height: '28px', borderRadius: '50%', objectFit: 'cover' }}
               />

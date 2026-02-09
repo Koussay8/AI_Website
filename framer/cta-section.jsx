@@ -1301,6 +1301,18 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 							layoutDependency={layoutDependency}
 							layoutId={"VhD5uACqY"}
 						>
+							<motion.img
+								src={"/founder-koussay.png"}
+								alt={"Founder"}
+								layoutDependency={layoutDependency}
+								style={{
+									alignSelf: "flex-end",
+									borderRadius: "999px",
+									height: 72,
+									objectFit: "cover",
+									width: 72,
+								}}
+							/>
 							<motion.div
 								className={"framer-mdsrkf"}
 								data-framer-name={"text"}
