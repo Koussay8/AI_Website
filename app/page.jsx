@@ -1,5 +1,6 @@
 'use client'
 
+import { useRef, useEffect, useCallback } from 'react'
 import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
 import Marquee from 'react-fast-marquee'
@@ -28,6 +29,79 @@ import {
 } from '@/framer/chunks/chunk-ZM3IMGF7'
 import { stdin_default as ShapesIcon } from '@/framer/chunks/chunk-GD2KCKTC'
 import InfiniteScrollCarousel from '@/components/InfiniteScrollCarousel'
+
+// Safari autoplay fix: use a callback ref to force muted + play()
+function useVideoAutoplay() {
+  const videoRef = useRef(null)
+
+  const setVideoRef = useCallback((node) => {
+    videoRef.current = node
+    if (node) {
+      // Force muted property directly on DOM (React attribute bug with Safari)
+      node.muted = true
+      node.playsInline = true
+      node.setAttribute('playsinline', '')
+      node.setAttribute('webkit-playsinline', '')
+      // Attempt play immediately
+      const playPromise = node.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {})
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    // Retry play on canplay event (for slow-loading videos)
+    const handleCanPlay = () => {
+      video.muted = true
+      const p = video.play()
+      if (p !== undefined) p.catch(() => {})
+    }
+
+    // Retry on visibility change (Safari pauses background tabs)
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible' && video.paused) {
+        video.muted = true
+        const p = video.play()
+        if (p !== undefined) p.catch(() => {})
+      }
+    }
+
+    // Retry on user interaction as last resort (iOS Safari)
+    const handleInteraction = () => {
+      if (video.paused) {
+        video.muted = true
+        const p = video.play()
+        if (p !== undefined) {
+          p.then(() => {
+            document.removeEventListener('touchstart', handleInteraction)
+            document.removeEventListener('click', handleInteraction)
+            document.removeEventListener('scroll', handleInteraction)
+          }).catch(() => {})
+        }
+      }
+    }
+
+    video.addEventListener('canplay', handleCanPlay)
+    document.addEventListener('visibilitychange', handleVisibility)
+    document.addEventListener('touchstart', handleInteraction, { passive: true })
+    document.addEventListener('click', handleInteraction, { passive: true })
+    document.addEventListener('scroll', handleInteraction, { passive: true })
+
+    return () => {
+      video.removeEventListener('canplay', handleCanPlay)
+      document.removeEventListener('visibilitychange', handleVisibility)
+      document.removeEventListener('touchstart', handleInteraction)
+      document.removeEventListener('click', handleInteraction)
+      document.removeEventListener('scroll', handleInteraction)
+    }
+  }, [])
+
+  return setVideoRef
+}
 
 // Inline Phosphor SVG icon components for integrations grid
 const FramerLogoIcon = (props) => (
@@ -128,6 +202,8 @@ const reviewImages = [
 ]
 
 export default function HomePage() {
+  const videoAutoplayRef = useVideoAutoplay()
+
   return (
     <div style={{
       backgroundColor: 'rgb(4, 7, 13)',
@@ -178,6 +254,7 @@ export default function HomePage() {
             zIndex: 1
           }}>
             <video
+              ref={videoAutoplayRef}
               autoPlay
               loop
               muted
